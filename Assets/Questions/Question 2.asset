@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a206db318385a43911e76b0dbae4e6, type: 3}
   m_Name: Question 2
   m_EditorClassIdentifier: 
-  question: Write your question here
+  question: What kind of creature was Bakasur, whom Kansa sent to kill Sri Krishna
+    in his childhood?
