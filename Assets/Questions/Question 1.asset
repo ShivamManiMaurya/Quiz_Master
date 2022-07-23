@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Question 1
   m_EditorClassIdentifier: 
   question: "Which of the following gods is also known as \u2018Gauri Nandan\u2019?"
+  options:
+  - Agni
+  - Indra
+  - Hanuman
+  - Ganesha
+  correctAnsIndex: 3
