@@ -15,9 +15,9 @@ public class QuestionSO : ScriptableObject
         return question;
     }
 
-    public string GetOptions(int correctAnsIndex)
+    public string GetOptions(int index)
     {
-        return options[correctAnsIndex];
+        return options[index];
     }
 
     public int GetCorrectAnsIndex()
