@@ -631,7 +631,7 @@ GameObject:
   - component: {fileID: 548425557}
   - component: {fileID: 548425556}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Timer Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -644,7 +644,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 548425554}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -958,7 +958,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questionBox: {fileID: 154120269}
-  question: {fileID: 11400000, guid: 7673c582f4429b14db6a7954bb96e382, type: 2}
+  questions:
+  - {fileID: 11400000, guid: 7673c582f4429b14db6a7954bb96e382, type: 2}
+  - {fileID: 11400000, guid: ac62be7ffe804de4ca1ca5fe155b90bb, type: 2}
+  - {fileID: 11400000, guid: 04cf3a81df6fcf744857783cf7c1c52e, type: 2}
+  - {fileID: 11400000, guid: 56e47a40bbf6a6248ad484b282a8e9d3, type: 2}
+  - {fileID: 11400000, guid: afba3fa2946ea2f45b24cc5d3f00c357, type: 2}
   answerOptions:
   - {fileID: 1389896050}
   - {fileID: 1511520995}
@@ -966,6 +971,7 @@ MonoBehaviour:
   - {fileID: 1392503459}
   defaultAnswerSprite: {fileID: 21300000, guid: 905e7aa4d6a8fbe4d9ef37d7b6492d52, type: 3}
   correctAnswerSprite: {fileID: 21300000, guid: cda3bc1f0703a8f4899d26bf61361b0b, type: 3}
+  timerImage: {fileID: 548425556}
 --- !u!1 &707321494
 GameObject:
   m_ObjectHideFlags: 0
@@ -1513,9 +1519,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 091d3d9b98b71b14aac1af6928d2470c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToCompleteQuestion: 5
-  timeToShowCorrectAnswer: 10
+  timeToCompleteQuestion: 10
+  timeToShowCorrectAnswer: 5
+  loadNextQuestion: 0
   isAnsweringQuestion: 0
+  fillFraction: 0
 --- !u!4 &1712561541
 Transform:
   m_ObjectHideFlags: 0
