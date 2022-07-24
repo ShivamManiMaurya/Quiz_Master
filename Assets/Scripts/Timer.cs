@@ -13,9 +13,19 @@ public class Timer : MonoBehaviour
 
     float timeValue;
 
+    Quiz quiz;
+
+    void Awake()
+    {
+        quiz = FindObjectOfType<Quiz>();
+    }
+
     void Update()
     {
-        UpdateTimer();
+        if (!quiz.isComplete)
+        {
+            UpdateTimer();
+        }
     }
 
     public void CancelTimer()
@@ -53,7 +63,5 @@ public class Timer : MonoBehaviour
             }
         }
 
-
-        //Debug.Log(isAnsweringQuestion+": "+timeValue+" = "+fillFraction);
     }
 }
