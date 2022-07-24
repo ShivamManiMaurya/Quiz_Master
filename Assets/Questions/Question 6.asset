@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 84a206db318385a43911e76b0dbae4e6, type: 3}
-  m_Name: Question 3
+  m_Name: Question 6
   m_EditorClassIdentifier: 
-  question: Which battle in 1757 marked the beginning of British occupation in India?
+  question: Which of these Union Territories has the same name as that of its capital?
   options:
-  - Assaye
-  - Plassey
-  - Buxar
-  - Cuddalore
-  correctAnsIndex: 1
+  - Lakshwadeep
+  - Dadra and Nagar Haveli
+  - Chandigarh
+  - Andaman and Nicobar Islands
+  correctAnsIndex: 2

@@ -8,8 +8,10 @@ public class Quiz : MonoBehaviour
 {
     [Header("Questions")]
     [SerializeField] TextMeshProUGUI questionBox;
+    [SerializeField] TextMeshProUGUI questionNumber;
     [SerializeField] List<QuestionSO> questions = new List<QuestionSO>();
     QuestionSO currentQuestion;
+    int totalNumberOfQuestions;
 
     [Header("Answers")]
     [SerializeField] GameObject[] answerOptions;
@@ -39,6 +41,7 @@ public class Quiz : MonoBehaviour
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
         progressBar.maxValue = questions.Count;
         progressBar.value = 0;
+        totalNumberOfQuestions = (questions.Count);
     }
 
     void Update()
@@ -55,12 +58,16 @@ public class Quiz : MonoBehaviour
             hasAnsweredEarly = false;
             GetNextQuestion();
             timer.loadNextQuestion = false;
+
+            
         }
         else if (!hasAnsweredEarly && !timer.isAnsweringQuestion)
         {
             DisplayAnswer(-1);
             SetButtonState(false);
         }
+
+        
     }
 
     void DisplayAnswer(int index)
@@ -90,6 +97,7 @@ public class Quiz : MonoBehaviour
     void DisplayQuestions()
     {
         questionBox.text = currentQuestion.GetQuestion();
+        questionNumber.text = "Question Number - " + (totalNumberOfQuestions - questions.Count);
 
         for (int i = 0; i < answerOptions.Length; i++)
         {

@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   question: Which astronomer was the first to observe the rings around Saturn?
   options:
-  - fsdg
-  - scx
-  - ter
-  - ds
-  correctAnsIndex: 2
+  - Galileo Galilei
+  - Johannes Kepner
+  - Nicholas Copernicus
+  - Edwin Hubble
+  correctAnsIndex: 0

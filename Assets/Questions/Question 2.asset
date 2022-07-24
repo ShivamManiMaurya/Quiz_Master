@@ -15,8 +15,8 @@ MonoBehaviour:
   question: What kind of creature was Bakasur, whom Kansa sent to kill Sri Krishna
     in his childhood?
   options:
-  - bla1
-  - bla2
-  - bla3
-  - bla4
-  correctAnsIndex: 2
+  - Bird
+  - Snake
+  - Lizard
+  - Deer
+  correctAnsIndex: 0
